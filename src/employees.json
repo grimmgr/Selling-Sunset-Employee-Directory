@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "first_name": "Chrishell",
+        "last_name": "Stause",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode3_00_13_10_09.png?w=1240",
+        "email": "chrishell@ogroup.com",
+        "instagram": "https://www.instagram.com/chrishell.stause",
+        "big_listing": "5.3"
+    },
+    {
+        "id": 2,
+        "first_name": "Christine",
+        "last_name": "Quinn",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode5_00_15_32_05.png?w=1240",
+        "email": "christine@ogroup.com",
+        "instagram": "https://www.instagram.com/thechristinequinn/",
+        "big_listing": "12.5"
+    },
+    {
+        "id": 3,
+        "first_name": "Maya",
+        "last_name": "Vander",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode7_00_18_14_00.png?w=1240",
+        "email": "maya@ogroup.com",
+        "big_listing": "5.5"
+    },
+    {
+        "id": 4,
+        "first_name": "Mary",
+        "last_name": "Fitzgerald",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode3_00_04_44_03.png?w=1240",
+        "email": "mary@ogroup.com",
+        "instagram": "https://www.instagram.com/themaryfitzgerald/",
+        "big_listing": "9.75"
+    },
+    {
+        "id": 5,
+        "first_name": "Heather",
+        "last_name": "Young",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode1_00_11_24_08.png?w=1240",
+        "email": "heatheryoung@ogroup.com",
+        "instagram": "https://www.instagram.com/heatherraeyoung/",
+        "big_listing": "6"
+    },
+    {
+        "id": 6,
+        "first_name": "Amanza",
+        "last_name": "Smith",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode6_00_07_30_03.png?w=1240",
+        "email": "amanza@ogroup.com",
+        "instagram": "https://www.instagram.com/amanzasmith",
+        "big_listing": "4"
+    }
+]
