@@ -6,7 +6,9 @@
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode3_00_13_10_09.png?w=1240",
         "email": "chrishell@ogroup.com",
         "instagram": "https://www.instagram.com/chrishell.stause",
-        "big_listing": "5.3"
+        "big_listing": "5.3",
+        "favorite": false,
+        "previous_jobs": ["actor"]
     },
     {
         "id": 2,
@@ -15,7 +17,9 @@
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode5_00_15_32_05.png?w=1240",
         "email": "christine@ogroup.com",
         "instagram": "https://www.instagram.com/thechristinequinn/",
-        "big_listing": "12.5"
+        "big_listing": "12.5",
+        "favorite": false,
+        "previous_jobs": ["actor"]
     },
     {
         "id": 3,
@@ -23,7 +27,9 @@
         "last_name": "Vander",
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode7_00_18_14_00.png?w=1240",
         "email": "maya@ogroup.com",
-        "big_listing": "5.5"
+        "big_listing": "5.5",
+        "favorite": false,
+        "previous_jobs": []
     },
     {
         "id": 4,
@@ -32,7 +38,9 @@
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode3_00_04_44_03.png?w=1240",
         "email": "mary@ogroup.com",
         "instagram": "https://www.instagram.com/themaryfitzgerald/",
-        "big_listing": "9.75"
+        "big_listing": "9.75",
+        "favorite": true,
+        "previous_jobs": []
     },
     {
         "id": 5,
@@ -41,7 +49,9 @@
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode1_00_11_24_08.png?w=1240",
         "email": "heatheryoung@ogroup.com",
         "instagram": "https://www.instagram.com/heatherraeyoung/",
-        "big_listing": "6"
+        "big_listing": "6",
+        "favorite": false,
+        "previous_jobs": "model"
     },
     {
         "id": 6,
@@ -50,6 +60,8 @@
         "image": "https://www.thesun.co.uk/wp-content/uploads/2020/06/SellingSunset_Season2_Episode6_00_07_30_03.png?w=1240",
         "email": "amanza@ogroup.com",
         "instagram": "https://www.instagram.com/amanzasmith",
-        "big_listing": "4"
+        "big_listing": "4",
+        "favorite": false,
+        "previous_jobs": ["cheerleader", "actor", "model"]
     }
 ]

@@ -8,12 +8,13 @@ import './App.css';
 const App = () => {
   const [employeeState, setEmployeeState] = useState(employeeData);
   const [orderState, setOrderState] = useState('id');
+  const [filterState, setFilterState] = useState();
 
   useEffect(() => {
     let sortedData;
 
     const sortData = (property) => {
-      if (property === 'big_listing') {
+      if (typeof property === 'number') {
         sortedData = [...employeeData].sort((a, b) => {
           return b[property] - a[property];
         });
@@ -29,12 +30,44 @@ const App = () => {
         })
       }
     };
-
-    //console.log(orderState);
     sortData(orderState);
     setEmployeeState(sortedData);
   }, [orderState]);
-  
+
+  useEffect(() => {
+    let filteredData;
+
+    const filterData = (property) => {
+      switch(property) {
+        case 'favorite':
+          filteredData = [...employeeData].filter(
+            emp => emp.favorite === true
+          )
+          break;
+        case 'actor':
+          filteredData = [...employeeData].filter(
+            emp => emp.previous_jobs.includes('actor')
+          )
+          break;
+        case 'model':
+          filteredData = [...employeeData].filter(
+            emp => emp.previous_jobs.includes('model')
+          )
+          break;
+        case 'real_estate':
+          filteredData = [...employeeData].filter(
+            emp => emp.previous_jobs.length === 0
+          )
+          break;
+        default:
+          filteredData = [...employeeData];
+      }
+    }
+
+    filterData(filterState);
+    setEmployeeState(filteredData);
+
+  }, [filterState])
 
   return (
     <main>
@@ -44,9 +77,21 @@ const App = () => {
         id='order'
         onChange={event => setOrderState(event.target.value)}
         >
+          <option value='id'>---</option>
           <option value='first_name'>first name</option>
           <option value='last_name'>last name</option>
           <option value='big_listing'> biggest listing</option>
+      </select>
+      <span>filter:</span>
+      <select 
+        id='filter'
+        onChange={event => setFilterState(event.target.value)}
+        >
+          <option value='none'>---</option>
+          <option value='favorite'>Jason's favorite</option>
+          <option value='actor'>former actors</option>
+          <option value='model'>former models</option>
+          <option value='real_estate'>long time agents</option>
       </select>
 
       { employeeState.map(employee => (
