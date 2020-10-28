@@ -8,13 +8,19 @@
 }
 
 html {
+  min-height: 100vh;
   overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
 }
 
 main {
   background-image: url('https://i.pinimg.com/originals/4c/99/41/4c99419d837bd388f5418cd620c283d2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: calc(100vh - 150px);
 }
 
 .options {
@@ -33,6 +39,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  min-height: 100%;
   padding-top: 20px;
 }
 

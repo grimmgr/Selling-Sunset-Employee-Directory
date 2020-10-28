@@ -92,7 +92,7 @@ const App = () => {
               id='filter'
               onChange={event => setFilterState(event.target.value)}
               >
-                <option value='none'>---</option>
+                <option value='none'>everyone</option>
                 <option value='favorite'>Jason's favorite</option>
                 <option value='actor'>former actors</option>
                 <option value='model'>former models</option>
