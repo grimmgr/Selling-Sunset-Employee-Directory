@@ -1,8 +1,41 @@
+.card {
+    background-color: rgba(255, 255, 255, 1);
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
 .img-container {
-    height: 200px;
-    width: 200px;
+    overflow-x: hidden;
+    width: 150px;
 }
 
 img {
-    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+p {
+    font-size: 10px;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(255, 0, 162);
+}
+
+a:active {
+    color: rgb(255, 0, 162);
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
 }

@@ -1,5 +1,39 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+main {
+  background-image: url('https://i.pinimg.com/originals/4c/99/41/4c99419d837bd388f5418cd620c283d2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.options {
+  background-color: rgba(255, 255, 255, .8);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+span {
+  font-size: 12px;
+  padding-right: 2px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
 }
 
 .App-logo {

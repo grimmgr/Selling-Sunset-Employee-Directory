@@ -1,0 +1,33 @@
+header {
+    align-items: center;
+    background-image: url('https://www.canyon-news.com/wp-content/uploads/2016/09/Sunset-Boulevard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    justify-content: center;
+}
+
+.title-container {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px 20px rgb(255, 255, 255);
+    padding: 5px;
+    width: max-content;
+
+}
+
+h1 {
+    color: rgb(255, 0, 162);
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
