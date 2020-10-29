@@ -2,7 +2,7 @@
   "name": "employee-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://grimmgr.github.io/Selling-Sunset-Employee-Directory",
+  "homepage": "https://grimmgr.github.io/Selling-Sunset-Employee-Directory/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
