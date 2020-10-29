@@ -8,7 +8,7 @@
 
 .img-container {
     overflow-x: hidden;
-    width: 150px;
+    width: 100%;
 }
 
 img {
@@ -22,9 +22,10 @@ h3 {
     margin: 5px 0;
 }
 
-p {
+.text {
     font-size: 11px;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 a:link {
@@ -41,4 +42,48 @@ a:active {
 
 a:visited {
     color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 480px) {
+    .card {
+        height: 230px;
+        padding: 7px;
+        width: 200px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    #insta-icon {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 642px) {
+    .card {
+        height: 280px;
+        margin-bottom: 40px;
+        padding: 10px;
+        width: 275px;
+    }
+
+    
+}
+
+@media screen and (min-width: 885px) {
+    .card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1740px) {
+    .card {
+        margin: 50px;
+    }
 }

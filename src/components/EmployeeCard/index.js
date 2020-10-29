@@ -9,9 +9,10 @@ const EmployeeCard = (props) => {
             </div>
             <div className='info'>
                 <h3>{ props.firstName } { props.lastName }</h3>
-                <p>biggest listing: ${ props.bigListing } million</p>
-                <p>{ props.email }</p>
-                <a href={ props.instagram } target='_blank' rel='noreferrer'><i class="fab fa-instagram fa-xs"></i></a>
+                <p className='text'>biggest listing: ${ props.bigListing } million</p>
+                <a className='text' href={`mailto:${props.email}`} target='_blank' rel='noreferrer'>{ props.email }</a>
+                <br/>
+                <a id='insta-icon' className='text' href={ props.instagram } target='_blank' rel='noreferrer'><i className='fab fa-instagram'></i></a>
             </div>
         </div>
     )
