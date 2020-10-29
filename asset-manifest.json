@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Selling-Sunset_Employee-Tracker/static/css/main.d43e8dc8.chunk.css",
+    "main.js": "/Selling-Sunset_Employee-Tracker/static/js/main.cea69aca.chunk.js",
+    "main.js.map": "/Selling-Sunset_Employee-Tracker/static/js/main.cea69aca.chunk.js.map",
+    "runtime-main.js": "/Selling-Sunset_Employee-Tracker/static/js/runtime-main.507ddafa.js",
+    "runtime-main.js.map": "/Selling-Sunset_Employee-Tracker/static/js/runtime-main.507ddafa.js.map",
+    "static/js/2.519de9ba.chunk.js": "/Selling-Sunset_Employee-Tracker/static/js/2.519de9ba.chunk.js",
+    "static/js/2.519de9ba.chunk.js.map": "/Selling-Sunset_Employee-Tracker/static/js/2.519de9ba.chunk.js.map",
+    "static/js/3.7f771b23.chunk.js": "/Selling-Sunset_Employee-Tracker/static/js/3.7f771b23.chunk.js",
+    "static/js/3.7f771b23.chunk.js.map": "/Selling-Sunset_Employee-Tracker/static/js/3.7f771b23.chunk.js.map",
+    "index.html": "/Selling-Sunset_Employee-Tracker/index.html",
+    "static/css/main.d43e8dc8.chunk.css.map": "/Selling-Sunset_Employee-Tracker/static/css/main.d43e8dc8.chunk.css.map",
+    "static/js/2.519de9ba.chunk.js.LICENSE.txt": "/Selling-Sunset_Employee-Tracker/static/js/2.519de9ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.507ddafa.js",
+    "static/js/2.519de9ba.chunk.js",
+    "static/css/main.d43e8dc8.chunk.css",
+    "static/js/main.cea69aca.chunk.js"
+  ]
+}
