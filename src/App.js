@@ -6,10 +6,12 @@ import EmployeeCard from './components/EmployeeCard';
 import './App.css';
 
 const App = () => {
+
   const [employeeState, setEmployeeState] = useState(employeeData);
   const [orderState, setOrderState] = useState('id');
   const [filterState, setFilterState] = useState('everyone');
 
+  // helper function to sort data
   const sortData = (property, dataArray) => {
     let newArray;
     if (property === 'id') {
@@ -35,6 +37,7 @@ const App = () => {
     return newArray;
   };
 
+  // helper function to filter data
   const filterData = (property, dataArray) => {
     let newArray;
     switch(property) {
@@ -71,7 +74,7 @@ const App = () => {
     const filteredAndSorted = sortData(orderState, filtered);
     // set state
     setEmployeeState(filteredAndSorted);
-    
+
   }, [orderState, filterState])
 
   return (
