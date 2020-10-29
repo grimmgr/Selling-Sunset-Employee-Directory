@@ -10,16 +10,18 @@ const App = () => {
   const [orderState, setOrderState] = useState('id');
   const [filterState, setFilterState] = useState();
 
-  useEffect(() => {
-    let sortedData;
 
-    const sortData = (property) => {
-      if (typeof property === 'number') {
-        sortedData = [...employeeData].sort((a, b) => {
+
+  useEffect(() => {
+    let filteredData;
+
+    const sortData = (property, dataArray) => {
+      if (property === 'big_listing' || property === 'id') {
+        dataArray.sort((a, b) => {
           return b[property] - a[property];
         });
       } else {
-        sortedData = [...employeeData].sort((a, b) => {
+        dataArray.sort((a, b) => {
           if ( a[property] < b[property] ) {
             return -1;
           }
@@ -29,13 +31,8 @@ const App = () => {
           return 0;
         })
       }
+      return dataArray;
     };
-    sortData(orderState);
-    setEmployeeState(sortedData);
-  }, [orderState]);
-
-  useEffect(() => {
-    let filteredData;
 
     const filterData = (property) => {
       switch(property) {
@@ -65,9 +62,11 @@ const App = () => {
     }
 
     filterData(filterState);
+
+    sortData(orderState, filteredData);
     setEmployeeState(filteredData);
 
-  }, [filterState])
+  }, [orderState, filterState])
 
   return (
     <>
