@@ -1,3 +1,3 @@
 # Selling Sunset Employee Directory
 
-<img src='public/screenshot.jpg' with='500px'>
+<img src='public/screenshot.jpg' width='600px'>
