@@ -70,7 +70,7 @@ const App = () => {
   useEffect(() => {
     // filter employee data
     const filtered = filterData(filterState, employeeData);
-    // sort employee data
+    // sort filtered data
     const filteredAndSorted = sortData(orderState, filtered);
     // set state
     setEmployeeState(filteredAndSorted);
@@ -88,7 +88,7 @@ const App = () => {
               id='order'
               onChange={event => setOrderState(event.target.value)}
               >
-                <option value='id'>---</option>
+                <option value='id'>id</option>
                 <option value='first_name'>first name</option>
                 <option value='last_name'>last name</option>
                 <option value='big_listing'> biggest listing</option>

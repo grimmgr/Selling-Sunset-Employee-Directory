@@ -52,13 +52,13 @@ span {
 @media screen and (min-width: 642px) {
   .options {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
 @media screen and (min-width: 850px) {
   .options {
-    padding: 20px 10%;
+    padding: 10px 10%;
   }
 }
 

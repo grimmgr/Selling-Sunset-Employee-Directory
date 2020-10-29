@@ -66,10 +66,10 @@ a:visited {
 
 @media screen and (min-width: 642px) {
     .card {
-        height: 280px;
+        height: 250px;
         margin-bottom: 40px;
         padding: 10px;
-        width: 275px;
+        width: 250px;
     }
 
     
@@ -77,8 +77,8 @@ a:visited {
 
 @media screen and (min-width: 885px) {
     .card {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 
