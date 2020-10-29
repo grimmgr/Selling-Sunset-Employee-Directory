@@ -8,64 +8,70 @@ import './App.css';
 const App = () => {
   const [employeeState, setEmployeeState] = useState(employeeData);
   const [orderState, setOrderState] = useState('id');
-  const [filterState, setFilterState] = useState();
+  const [filterState, setFilterState] = useState('everyone');
 
+  const sortData = (property, dataArray) => {
+    let newArray;
+    if (property === 'id') {
+      newArray = [...dataArray].sort((a, b) => {
+        return a[property] - b[property];
+      });
+    }
+    if (property === 'big_listing') {
+      newArray = [...dataArray].sort((a, b) => {
+        return b[property] - a[property];
+      });
+    } else {
+      newArray = [...dataArray].sort((a, b) => {
+        if ( a[property] < b[property] ) {
+          return -1;
+        }
+        if ( a[property] > b[property] ) {
+          return 1;
+        }
+        return 0;
+      })
+    }
+    return newArray;
+  };
 
+  const filterData = (property, dataArray) => {
+    let newArray;
+    switch(property) {
+      case 'favorite':
+        newArray = dataArray.filter(
+          emp => emp.favorite === true
+        )
+        break;
+      case 'actor':
+        newArray = dataArray.filter(
+          emp => emp.previous_jobs.includes('actor')
+        )
+        break;
+      case 'model':
+        newArray = dataArray.filter(
+          emp => emp.previous_jobs.includes('model')
+        )
+        break;
+      case 'real_estate':
+        newArray = dataArray.filter(
+          emp => emp.previous_jobs.length === 0
+        )
+        break;
+      default:
+        newArray = dataArray;
+    }
+    return newArray;
+  }
 
   useEffect(() => {
-    let filteredData;
-
-    const sortData = (property, dataArray) => {
-      if (property === 'big_listing' || property === 'id') {
-        dataArray.sort((a, b) => {
-          return b[property] - a[property];
-        });
-      } else {
-        dataArray.sort((a, b) => {
-          if ( a[property] < b[property] ) {
-            return -1;
-          }
-          if ( a[property] > b[property] ) {
-            return 1;
-          }
-          return 0;
-        })
-      }
-      return dataArray;
-    };
-
-    const filterData = (property) => {
-      switch(property) {
-        case 'favorite':
-          filteredData = [...employeeData].filter(
-            emp => emp.favorite === true
-          )
-          break;
-        case 'actor':
-          filteredData = [...employeeData].filter(
-            emp => emp.previous_jobs.includes('actor')
-          )
-          break;
-        case 'model':
-          filteredData = [...employeeData].filter(
-            emp => emp.previous_jobs.includes('model')
-          )
-          break;
-        case 'real_estate':
-          filteredData = [...employeeData].filter(
-            emp => emp.previous_jobs.length === 0
-          )
-          break;
-        default:
-          filteredData = [...employeeData];
-      }
-    }
-
-    filterData(filterState);
-
-    sortData(orderState, filteredData);
-    setEmployeeState(filteredData);
-
+    // filter employee data
+    const filtered = filterData(filterState, employeeData);
+    // sort employee data
+    const filteredAndSorted = sortData(orderState, filtered);
+    // set state
+    setEmployeeState(filteredAndSorted);
+    
   }, [orderState, filterState])
 
   return (
